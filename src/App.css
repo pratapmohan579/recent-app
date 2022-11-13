@@ -1,0 +1,73 @@
+body {
+	background: #141414;
+	color: #ffffff;
+	overflow-x: hidden;
+}
+
+.nav{
+	width: 100vw;
+
+}
+
+.head{
+	color: rgb(250, 253, 250);
+	font-size: 60%;
+	overflow: hidden;
+}
+.movie-app {
+	display: flex;   
+	flex-wrap: nowrap;
+	 overflow-x: auto;
+}
+
+.movie-app::-webkit-scrollbar {
+	display: none;
+}
+
+.image-container {
+	height: 300px;
+	width: 200px;
+	/* overflow: hidden; */
+	position: relative;
+	transition: transform 0.2s;
+}
+
+ .image-container:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.image-container:hover .overlay {
+	opacity: 100%;
+} 
+
+.overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	padding: 9px;
+	text-align: center;
+}
+
+.img{
+	width: 300px;
+}
+
+.delete{
+	background-color: rgb(104, 11, 6);
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+	text-align: center;
+	opacity: 0%;
+	transition: 0.5s;
+	padding: 20px;
+	font-size: larger;
+}
+
+.image-container:hover .delete{
+	opacity: 80%;
+}
